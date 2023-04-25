@@ -1,16 +1,27 @@
 {
-  "name": "node-utzmyx",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "start": "node ./bin/www"
-  },
+  "name": "null-ecart",
+  "version": "1.0.0",
+  "description": "sample ecart application",
+  "main": "app.js",
   "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "express": "~4.16.1",
-    "http-errors": "~1.6.3",
-    "jade": "~1.11.0",
-    "morgan": "~1.9.1"
-  }
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.4",
+    "node": "^19.8.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RagavaRvd/node-ecart.git"
+  },
+  "author": "ragav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RagavaRvd/node-ecart/issues"
+  },
+  "homepage": "https://github.com/RagavaRvd/node-ecart#readme"
 }

@@ -1,9 +1,14 @@
-var express = require('express');
-var router = express.Router();
+const express = require("express");
+const router = express.Router();
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+// Import route files
+const productRoutes = require("./category");
+// const userRoutes = require('./userRoutes');
+// const orderRoutes = require('./orderRoutes');
+
+// Use route files
+router.use("/products", productRoutes);
+// router.use('/users', userRoutes);
+// router.use('/orders', orderRoutes);
 
 module.exports = router;
